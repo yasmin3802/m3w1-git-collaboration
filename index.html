@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="GitFlow - A simple guide to understanding my Git workflow and development process.">
+
+    <title>GitFlow | My Git Workflow</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+
+        <nav class="navbar">
+
+            <a href="#" class="logo">
+                <span class="logo-icon">⌘</span>
+                <span>GitFlow</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#workflow">Workflow</a></li>
+                <li><a href="#commands">Commands</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="hero-label">MY DEVELOPMENT WORKFLOW</span>
+
+                <h1>
+                    Build better.
+                    <span>Commit smarter.</span>
+                </h1>
+
+                <p>
+                    A simple overview of how I use Git to manage changes,
+                    work with branches, and collaborate through Pull Requests.
+                </p>
+
+                <a href="#workflow" class="primary-button">
+                    Explore Workflow
+                </a>
+
+            </div>
+
+            <div class="hero-card">
+
+                <div class="terminal-top">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="terminal-content">
+                    <p><span>$</span> git status</p>
+                    <p class="success">✓ Working tree clean</p>
+
+                    <p><span>$</span> git branch</p>
+                    <p>* main</p>
+                    <p>  feature/update</p>
+
+                    <p><span>$</span> git push</p>
+                    <p class="success">✓ Changes pushed successfully</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Workflow -->
+        <section class="workflow-section" id="workflow">
+
+            <div class="section-heading">
+
+                <span class="section-label">THE PROCESS</span>
+
+                <h2>My Git Workflow</h2>
+
+                <p>
+                    Each step keeps my project organized and makes collaboration easier.
+                </p>
+
+            </div>
+
+
+            <div class="workflow-grid">
+
+                <article class="workflow-card">
+
+                    <div class="step-number">01</div>
+
+                    <div class="card-icon">●</div>
+
+                    <h3>Start on Main</h3>
+
+                    <p>
+                        The main branch contains the stable version
+                        of the project.
+                    </p>
+
+                </article>
+
+
+                <article class="workflow-card">
+
+                    <div class="step-number">02</div>
+
+                    <div class="card-icon">⑂</div>
+
+                    <h3>Create a Branch</h3>
+
+                    <p>
+                        I create a separate branch before working
+                        on a new feature or change.
+                    </p>
+
+                </article>
+
+
+                <article class="workflow-card">
+
+                    <div class="step-number">03</div>
+
+                    <div class="card-icon">✓</div>
+
+                    <h3>Make & Commit</h3>
+
+                    <p>
+                        After making changes, I save them with
+                        a clear and meaningful commit message.
+                    </p>
+
+                </article>
+
+
+                <article class="workflow-card">
+
+                    <div class="step-number">04</div>
+
+                    <div class="card-icon">↑</div>
+
+                    <h3>Push Changes</h3>
+
+                    <p>
+                        I push my branch to GitHub so the changes
+                        are available remotely.
+                    </p>
+
+                </article>
+
+
+                <article class="workflow-card">
+
+                    <div class="step-number">05</div>
+
+                    <div class="card-icon">↗</div>
+
+                    <h3>Open a Pull Request</h3>
+
+                    <p>
+                        A Pull Request allows changes to be reviewed
+                        before they are merged into main.
+                    </p>
+
+                </article>
+
+
+                <article class="workflow-card">
+
+                    <div class="step-number">06</div>
+
+                    <div class="card-icon">↳</div>
+
+                    <h3>Merge</h3>
+
+                    <p>
+                        Once the changes are ready, the feature branch
+                        can be merged into the main branch.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Commands -->
+        <section class="commands-section" id="commands">
+
+            <div class="section-heading">
+
+                <span class="section-label">QUICK REFERENCE</span>
+
+                <h2>Essential Git Commands</h2>
+
+                <p>
+                    A few commands I use throughout the development process.
+                </p>
+
+            </div>
+
+
+            <div class="commands-list">
+
+                <div class="command-row">
+
+                    <code>git status</code>
+
+                    <span>
+                        Check the current state of the repository.
+                    </span>
+
+                </div>
+
+
+                <div class="command-row">
+
+                    <code>git branch</code>
+
+                    <span>
+                        View available branches.
+                    </span>
+
+                </div>
+
+
+                <div class="command-row">
+
+                    <code>git switch -c feature/name</code>
+
+                    <span>
+                        Create and switch to a new feature branch.
+                    </span>
+
+                </div>
+
+
+                <div class="command-row">
+
+                    <code>git add .</code>
+
+                    <span>
+                        Stage the project changes.
+                    </span>
+
+                </div>
+
+
+                <div class="command-row">
+
+                    <code>git commit -m "message"</code>
+
+                    <span>
+                        Save staged changes with a message.
+                    </span>
+
+                </div>
+
+
+                <div class="command-row">
+
+                    <code>git push</code>
+
+                    <span>
+                        Send local commits to GitHub.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- About -->
+        <section class="about-section" id="about">
+
+            <div class="about-card">
+
+                <div class="about-icon">⌘</div>
+
+                <div>
+
+                    <span class="section-label">WHY GIT MATTERS</span>
+
+                    <h2>Small changes. Clear history. Better teamwork.</h2>
+
+                    <p>
+                        Git helps me track changes, experiment safely with branches,
+                        and collaborate with other developers without affecting the
+                        stable version of my project.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <p>
+            &copy; 2026 Yasmin Sherefa. All rights reserved.
+        </p>
+
+        <span>GitFlow </span>
+
+    </footer>
+
+
+</body>
+
+</html>
